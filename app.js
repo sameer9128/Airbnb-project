@@ -72,9 +72,9 @@ const sessionOptions={
 
 app.use(session(sessionOptions))
 app.use(flash())
-app.get('/',(req,res)=>{
-    res.send('working')
-})
+// app.get('/',(req,res)=>{
+//     res.send('working')
+// })
 
 app.use(passport.initialize())
 app.use(passport.session())
